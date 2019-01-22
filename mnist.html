@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html ng-app lang="en">
+<head>
+
+<ng-include src="'head.html'"></ng-include>
+
+<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,500i,600,700,800,900|Poppins:200,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800">
+ 
+<!-- Plugins -->
+<link rel="stylesheet" type="text/css" href="css/plugins-css.css" />
+
+<!-- revoluation -->
+<link rel="stylesheet" type="text/css" href="revolution/css/settings.css" media="screen" />
+
+<!-- Typography -->
+<link rel="stylesheet" type="text/css" href="css/typography.css" />
+
+<!-- Shortcodes -->
+<link rel="stylesheet" type="text/css" href="css/shortcodes/shortcodes.css" />
+
+<!-- Style -->
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<!-- Responsive -->
+<link rel="stylesheet" type="text/css" href="css/responsive.css" /> 
+<link rel="stylesheet" type="text/css" href="css/new.css" /> 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+ 
+<body>
+ 
+<div class="wrapper">
+  
+<!--=================================
+ preloader -->
+ 
+<div id="pre-loader">
+    <img src="images/pre-loader/loader-01.svg" alt="">
+</div>
+
+<!--=================================
+ preloader -->
+    
+<!--=================================
+ header -->
+<ng-include src="'header.html'"></ng-include>
+<!--=================================
+ header -->
+
+<!--=================================
+ header -->
+
+<section class="page-title pt-110 pb-30 bg-overlay-black-60 parallax" data-jarallax='{"speed": 0.6}' style="background-image: url(images/blog/big/mnist/mnist_1.png);">
+  <div class="container">
+    <div class="row"> 
+      <div class="col-lg-12"> 
+      <div class="page-title-name">
+          <h1>Mnist</h1>
+          <p>Number recognition.</p>
+        </div>
+          
+          <!--
+              <div class="share clearfix dt-mt--50">
+              <a class="button x-small" href="https://teachablemachine.withgoogle.com/">Launch Experiment</a>
+                  <div class="social xs-mt-10 float-right">
+                      <ul>
+                          <li>
+                              <a class="button x-small" href="#"> <i class="fa fa-android"></i> </a>
+                          </li>
+                          <li>
+                              <a class="button x-small" href="#"> <i class="fa fa-windows"></i> </a>
+                          </li>
+                          <li>
+                              <a class="button x-small" href="#"> <i class="fa fa-github"></i> </a>
+                          </li>
+                          <li>
+                              <a class="button x-small" href="#"> <i class="fa fa-code"></i> </a>
+                          </li>
+                      </ul>
+
+                  </div>
+              </div>
+-->
+     </div>
+     </div>
+  </div>
+</section>
+
+<!--=================================
+ portfolio -->
+
+<!--=================================
+ header -->
+
+<!--=================================
+ portfolio -->
+
+<section class="white-bg">
+  <div class="container">
+    
+		<div class="digit-demo-container mt-30">
+			<div class="text-center">
+				<button id="clear_canvas" class="button" onclick="clearCanvas(this.id)">Clear</button>
+<!--
+					<select >
+					  <option value="1">Some option</option>
+					  <option value="2">Another option</option>
+					</select>
+-->
+				<select id="select_model" class="fancyselect">
+					<option>MLP</option>
+					<option>CNN</option>
+				</select>
+				<button id="predict_canvas" class="button" onclick="predict(this.id)">Predict</button>
+			</div>
+<!--			<div class="flex-two">-->
+			<div class="row mt-20">
+			<div class="col-lg-6 text-center">
+				<div id="canvas_box_wrapper" class="canvas-box-wrapper">
+					<div id="canvas_box" class="canvas-box" style="z-index: 9999999"></div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div id="result_box">
+					<canvas id="chart_box" width="100" height="100"></canvas>
+				</div>
+			</div>
+			</div>
+<!--			</div>-->
+		</div>
+    
+ </div>
+ </section>
+
+<!--=================================
+ portfolio -->
+
+<!--=================================
+ footer -->
+
+<ng-include src="'footer.html'"></ng-include>
+
+<!--=================================
+ footer -->
+
+</div>
+
+<div id="back-to-top">
+    <a class="top arrow" href="#top"><i class="fa fa-angle-up"></i> <span>TOP</span></a>
+</div>
+ 
+<!--=================================
+ jquery -->
+
+<!-- jquery -->
+<script src="js/jquery-3.3.1.min.js"></script>
+
+<!-- plugins-jquery -->
+<script src="js/plugins-jquery.js"></script>
+
+<!-- plugin_path -->
+<script>var plugin_path = 'js/';</script>
+ 
+<!-- REVOLUTION JS FILES -->
+<script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+<!-- revolution custom --> 
+<script src="revolution/js/revolution-custom.js"></script> 
+
+<!-- custom -->
+<script src="js/custom.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+<!--	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<script type="text/javascript" src="js/mnist_app.js"></script>
+ 
+
+</body>
+</html>

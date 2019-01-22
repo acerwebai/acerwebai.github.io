@@ -1,13 +1,558 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hello，Acer WebAI</title>
+<html ng-app lang="en">
+<head>
+
+<ng-include src="'head.html'"></ng-include>
+
+<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,500i,600,700,800,900|Poppins:200,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800">
+ 
+<!-- Plugins -->
+<link rel="stylesheet" type="text/css" href="css/plugins-css.css" />
+
+<!-- revoluation -->
+<link rel="stylesheet" type="text/css" href="revolution/css/settings.css" media="screen" />
+
+<!-- Typography -->
+<link rel="stylesheet" type="text/css" href="css/typography.css" />
+
+<!-- Shortcodes -->
+<link rel="stylesheet" type="text/css" href="css/shortcodes/shortcodes.css" />
+
+<!-- Style -->
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<!-- Responsive -->
+<link rel="stylesheet" type="text/css" href="css/responsive.css" /> 
+<link rel="stylesheet" type="text/css" href="css/new.css" /> 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+</head>
+ 
+<body>
+ 
+<div class="wrapper">
+  
+<!--=================================
+ preloader -->
+ 
+<div id="pre-loader">
+    <img src="images/pre-loader/loader-01.svg" alt="">
+</div>
+
+<!--=================================
+ preloader -->
     
-  </head>
-  <body>
-    <h1>This is "https://acerwebai.github.io" index.html</h1>   
-    
-    <a href='https://acerwebai.github.io/VangoghCrazyWorld/.'> Vangogh Crazy World</a>
-  </body>
+<!--=================================
+ header -->
+<ng-include src="'header.html'"></ng-include>
+<!--=================================
+ header -->
+
+
+<!--=================================
+ banner -->
+
+<!--
+ <section class="architecture-banner white-bg mb-30 mt-20">
+   <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+           <div class="owl-carousel pl-20 pr-20" data-items="4" data-md-items="4" data-sm-items="3" data-xs-items="2" data-xx-items="1" data-space="20" nav-arrow=true >
+             <div class="item">
+                <div class="portfolio-item image-text">
+                   <img src="images/homeproj.jpg" alt="">
+                     <div class="portfolio-overlay">
+                        <h3 class="text-white text-uppercase"> <a href="teachable_machine.html">Teachable machine</a> </h3>
+                        <p class="text-white">Teach a machine using your camera, live in the browser - no coding required.</p>
+                        <a href="teachable_machine.html" class="button icon mb-10">
+                        <span>View detail</span>
+                       </a>
+                  </div>
+                </div>
+             </div>
+             <div class="item">
+                  <div class="portfolio-item image-text">
+                  <img src="images/sketch_rnn.jpg" alt="">
+                     <div class="portfolio-overlay">
+                        <h3 class="text-white text-uppercase"> <a href="#"> Sketch-RNN Demos</a> </h3>
+                        <p class="text-white">Draw together with a neural network.</p>
+                      <a class="button icon mt-20" data-toggle="modal" data-target="#myModal-02" href="#">
+                        <span>View detail</span>
+                       </a>
+                  </div>
+                </div>
+             </div>
+             <div class="item">
+                  <div class="portfolio-item image-text">
+                   <img src="images/nn_see.jpg" alt="">
+                     <div class="portfolio-overlay">
+                        <h3 class="text-white text-uppercase"> <a href="#">What Neural Networks See</a> </h3>
+                        <p class="text-white">Explore the layers of a neural network with your camera.</p>
+                      <a class="button icon mt-20" data-toggle="modal" data-target="#myModal" href="#">
+                        <span>View detail</span>
+                       </a>
+                  </div>
+                </div>
+             </div>
+             <div class="item">
+                  <div class="portfolio-item image-text">
+                  <img src="images/vhsd.jpg" alt="">
+                     <div class="portfolio-overlay">
+                        <h3 class="text-white text-uppercase"> <a href="#">Visualizing High-Dimensional Space</a> </h3>
+                        <p class="text-white">Get a peek at how machine learning works.</p>
+                      <a class="button icon mt-20" data-toggle="modal" data-target="#myModal" href="#">
+                        <span>View detail</span>
+                       </a>
+                  </div>
+                </div>
+             </div>
+             <div class="item">
+                 <div class="portfolio-item image-text">
+                  <img src="images/hann.jpg" alt="">
+                     <div class="portfolio-overlay">
+                        <h3 class="text-white text-uppercase"> <a href="#">Handwriting with a Neural Net</a> </h3>
+                        <p class="text-white">Play with a neural net that generates handwriting based on your style.</p>
+                      <a class="button icon mt-20" data-toggle="modal" data-target="#myModal" href="#">
+                        <span>View detail</span>
+                       </a>
+                  </div>
+                </div>
+             </div>
+           </div>       
+        </div>
+      </div>
+   </div>
+ </section>
+ 
+-->
+
+     <div class="sm-mt-0 mt-10">
+         <div id="home-slider" class="owl-carousel" data-nav-arrow="false" data-autoheight="true" data-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1" data-xx-items="1" data-space="20">
+           <div class="item pd-40 min-h-260" style="background-image: url(images/teachable_machine.png); ">
+<!--             <img class="img-fluid full-width" src="images/blog/banner.png" alt="">-->
+                    <div class="row">
+                    <div class="col-lg-7"></div>
+                    <div class="col-lg-5">
+                      <div class="team-details">
+                      <div class="clearfix">
+                        <div class="title float">
+                          <h2 class="text-white">Teachable Machine</h2>
+<!--                          <p>Artistic</p>-->
+                      <p class="text-white">Teach A Machine Using Your Camera Live The Browser - No Coding Required.</p>
+                         </div>
+                          
+                         </div>
+<!--
+                        <div class="clearfix">
+                           <p>Arbitrary style transfer works around this limitation by using a separate style network that learns to break down any image into a 100-dimensional vector representing its style.</p>
+                        </div>  
+-->
+                        
+                          <div class="social-icons social-border color-hover">
+                           <ul>
+                              <a class="button x-small border-0" href="https://teachablemachine.withgoogle.com/" target="_blank">View Experiment</a>
+                           </ul>
+                          </div> 
+                      </div>
+                     </div>
+                   </div>
+           </div>
+           <div class="item pd-40 min-h-260" style="background-image: url(images/quick_draw.png);">
+                    <div class="row">
+                    <div class="col-lg-7"></div>
+                    <div class="col-lg-5">
+                      <div class="team-details">
+                      <div class="clearfix">
+                        <div class="title float">
+                          <h2 class="text-white">Quick Drawing</h2>
+                      <p class="text-white">A game where a neural net tries to guess what you’re drawing.</p>
+                         </div>
+                          
+                         </div>
+                          <div class="social-icons social-border color-hover">
+                           <ul>
+                              <a class="button x-small border-0" href="https://quickdraw.withgoogle.com/" target="_blank">View Experiment</a>
+                           </ul>
+                          </div> 
+                      </div>
+                     </div>
+                   </div>
+           </div>
+           <div class="item pd-40 min-h-260" style="background-image: url(images/thing_translator.png);">
+                    <div class="row">
+                    <div class="col-lg-7"></div>
+                    <div class="col-lg-5">
+                      <div class="team-details">
+                      <div class="clearfix">
+                        <div class="title float">
+                          <h2 class="text-white">Thing translator</h2>
+                      	  <p class="text-white">Take a picture of something to hear how to say it in a different language.</p>
+                         </div>
+                          
+                         </div>
+                          <div class="social-icons social-border color-hover">
+                           <ul>
+                              <a class="button x-small border-0" href="https://thing-translator.appspot.com/" target="_blank">View Experiment</a>
+                           </ul>
+                          </div> 
+                      </div>
+                     </div>
+                   </div>
+           </div>
+         </div>
+     </div>
+<!--=================================
+ banner -->
+
+   <!--=================================
+ blog -->
+
+ <section class="page-section-ptb gray-bg pt-50" id="wtshot">
+   <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+        <h2>What's  <span class="theme-color"> HOT </span>  </h2>
+        <p>What's HOT is highlights the best of showcase for simple AI that make it easier for anyone to start exploring machine learning, through pictures, drawings, language, music, and more.</p>
+       </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-30">
+         <div class="listing-post" id="hotcase1">
+          <div class="blog-overlay">
+            <div class="blog-image">
+              <img class="img-fluid" src="images/blog/big/01.jpg" alt="">
+            </div>
+            <div class="blog-icon clearfix">
+<!--              <span class="date float-left bg-warning">Open now </span>-->
+            </div>
+            <div class="blog-name clearfix pl-20">
+              <div class="blog-name-right">
+                <h5 class="text-white"><a href="thing_translator.html">Thing Translator</a></h5>
+<!--                <span class="text-white">Take a picture of something to </span>-->
+              </div>
+            </div>
+           </div>
+           <div class="listing-post-info">
+             <div class="listing-post-meta clearfix">
+                  <div class="float-right mt-1">
+                    <h6 class="theme-color"><a href="#">Tensorflow</a></h6>
+                  </div>
+              </div>
+              <div class="divider mt-15 mb-15">
+              </div>
+              <div class="blog-name clearfix">
+<!--
+              <div class="blog-name-left theme-bg">
+                 <span> M</span>
+              </div>
+-->
+              <div class="blog-name-right">
+                <p class="text-gray">Take a picture of something to hear different language.</p>
+              </div>
+            </div>
+            
+			  <div class="tags">
+<!--
+				<ul>
+				  <li><a href="tags.html">language</a></li>
+				  <li><a href="tags.html">picture</a></li>
+				</ul>
+-->
+			  </div>
+          
+           </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-30">
+         <div class="listing-post" id="hotcase2">
+          <div class="blog-overlay">
+            <div class="blog-image">
+              <img class="img-fluid" src="images/main_page/sketch_rnn_demos_1.jpg" alt="">
+            </div>
+            <div class="blog-icon clearfix">
+<!--              <span class="date float-left bg-warning">Open now </span>-->
+            </div>
+            <div class="blog-name clearfix pl-20">
+              <div class="blog-name-right">
+                <h5 class="text-white"><a href="sketch_rnn_%20demos.html">Sketch-RNN Demos</a></h5>
+<!--                <span class="text-white">When knitters teamed up with </span>-->
+              </div>
+            </div>
+           </div>
+           <div class="listing-post-info">
+             <div class="listing-post-meta clearfix">
+                  
+                  <div class="float-right mt-1">
+                    <h6 class="theme-color"><a href="#">TensorFlow</a></h6>
+                  </div>
+              </div>
+              <div class="divider mt-15 mb-15">
+              </div>
+              <div class="blog-name clearfix">
+<!--
+              <div class="blog-name-left theme-bg">
+                 <span> S</span>
+              </div>
+-->
+              <div class="blog-name-right">
+                <p class="text-gray">Draw together with a neural network.</p>
+              </div>
+			  <div class="tags">
+				<ul>
+				  <li><a href="tags.html">TensorFlow</a></li>
+				  <li><a href="tags.html">SketchRNN</a></li>
+				</ul>
+			  </div>
+            </div>
+           </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-30">
+         <div class="listing-post" id="hotcase3">
+          <div class="blog-overlay">
+            <div class="blog-image">
+              <img class="img-fluid" src="images/blog/big/03.jpg" alt="">
+            </div>
+            <div class="blog-icon clearfix">
+<!--              <span class="date float-left bg-warning">Open now </span>-->
+            </div>
+            <div class="blog-name clearfix pl-20">
+
+              <div class="blog-name-right">
+                <h5 class="text-white"><a href="emoji_scavenger_hunt.html">Emoji Scavenger Hunt</a></h5>
+<!--                <span class="text-white">Identify emojis in the real world</span>-->
+              </div>
+            </div>
+           </div>
+           <div class="listing-post-info">
+             <div class="listing-post-meta clearfix">
+                  <div class="float-right mt-1">
+                    <h6 class="theme-color"><a href="#">Pytorch</a></h6>
+                  </div>
+              </div>
+              <div class="divider mt-15 mb-15">
+              </div>
+              <div class="blog-name clearfix">
+<!--
+              <div class="blog-name-left theme-bg">
+                 <span>D</span>
+              </div>
+-->
+              <div class="blog-name-right">
+                <p class="text-gray">Identify emojis in the real world with your phone’s camera.</p>
+              </div>
+			  <div class="tags">
+<!--
+				<ul>
+				  <li><a href="#">language</a></li>
+				  <li><a href="#">picture</a></li>
+				</ul>
+-->
+			  </div>
+            </div>
+           </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+         <div class="listing-post" id="hotcase4">
+          <div class="blog-overlay">
+            <div class="blog-image">
+              <img class="img-fluid" src="images/main_page/sketch_rnn_drawing_1.jpg" alt="">
+            </div>
+            <div class="blog-icon clearfix">
+<!--              <span class="date float-left bg-danger">Close </span>-->
+            </div>
+            <div class="blog-name clearfix pl-20">
+
+              <div class="blog-name-right">
+                <h5 class="text-white"><a href="sketch_rnn_drawing.html">Sketch-RNN Drawing</a></h5>
+<!--                <span class="text-white">A summer science project based on</span>-->
+              </div>
+            </div>
+           </div>
+           <div class="listing-post-info">
+             <div class="listing-post-meta clearfix">
+                  <div class="float-right mt-1">
+                    <h6 class="theme-color"><a href="#">TensorFlow</a></h6>
+                  </div>
+              </div>
+              <div class="divider mt-15 mb-15">
+              </div>
+              <div class="blog-name clearfix">
+<!--
+              <div class="blog-name-left theme-bg">
+                 <span>V</span>
+              </div>
+-->
+              <div class="blog-name-right">
+                <p class="text-gray">A Generative Model for Vector Drawings.</p>
+              </div>
+              
+			  <div class="tags">
+				<ul>
+				  <li><a href="tags.html">TensorFlow</a></li>
+				  <li><a href="tags.html">SketchRNN</a></li>
+				</ul>
+			  </div>
+           
+            </div>
+           </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+         <div class="listing-post" id="hotcase5">
+          <div class="blog-overlay">
+            <div class="blog-image">
+              <img class="img-fluid" src="images/blog/big/05.jpg" alt="">
+            </div>
+            <div class="blog-icon clearfix">
+<!--              <span class="date float-left bg-warning">Open now </span>-->
+            </div>
+            <div class="blog-name clearfix pl-20">
+
+              <div class="blog-name-right">
+                <h5 class="text-white"><a href="scrying_pen.html">Scrying Pen</a></h5>
+<!--                <span class="text-white">A realtime implementation of SketchRNN </span>-->
+              </div>
+            </div>
+           </div>
+           <div class="listing-post-info">
+             <div class="listing-post-meta clearfix">
+
+                  <div class="float-right mt-1">
+                    <h6 class="theme-color"><a href="#">TensorFlow.js</a></h6>
+                  </div>
+              </div>
+              <div class="divider mt-15 mb-15">
+              </div>
+              <div class="blog-name clearfix">
+<!--
+              <div class="blog-name-left theme-bg">
+                 <span>T</span>
+              </div>
+-->
+              <div class="blog-name-right">
+                <p class="text-gray">A realtime implementation of SketchRNN.</p>
+              </div>
+			  <div class="tags">
+				<ul>
+				  <li><a href="tags.html">TensorFlow.js</a></li>
+				  <li><a href="tags.html">SketchRNN</a></li>
+				</ul>
+			  </div>
+            </div>
+           </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+         <div class="listing-post" id="hotcase6">
+          <div class="blog-overlay">
+            <div class="blog-image">
+              <img class="img-fluid" src="images/main_page/image_to_text_1.jpg" alt="">
+            </div>
+            <div class="blog-icon clearfix">
+<!--              <span class="date float-left bg-warning">Open now </span>-->
+            </div>
+            <div class="blog-name clearfix pl-20">
+              <div class="blog-name-right">
+                <h5 class="text-white"><a href="image_to_text.html">Image Caption Generator</a></h5>
+<!--                <span class="text-white">Web-based sound installation </span>-->
+              </div>
+            </div>
+           </div>
+           <div class="listing-post-info">
+             <div class="listing-post-meta clearfix">
+                  <div class="float-right mt-1">
+                    <h6 class="theme-color"><a href="#">TensorFlow</a></h6>
+                  </div>
+              </div>
+              <div class="divider mt-15 mb-15">
+              </div>
+              <div class="blog-name clearfix">
+<!--
+              <div class="blog-name-left theme-bg">
+                 <span>N</span>
+              </div>
+-->
+              <div class="blog-name-right">
+                <p class="text-gray">Show and Tell: A Neural Image Caption Generator.</p>
+              </div>
+			  <div class="tags">
+				<ul>
+				  <li><a href="tags.html">TensorFlow</a></li>
+				  <li><a href="tags.html">LSTM</a></li>
+				</ul>
+			  </div>
+            </div>
+           </div>
+       </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ 
+<!--=================================
+ blog -->
+
+ 
+<!--=================================
+ footer -->
+
+<ng-include src="'footer.html'"></ng-include>
+
+<!--=================================
+ footer -->
+
+</div>
+
+<div id="back-to-top"><a class="top arrow" href="#top"><i class="fa fa-angle-up"></i> <span>TOP</span></a></div>
+ 
+<!--=================================
+ jquery -->
+
+<!-- jquery -->
+<script src="js/jquery-3.3.1.min.js"></script>
+
+<!-- plugins-jquery -->
+<script src="js/plugins-jquery.js"></script>
+
+<!-- plugin_path -->
+<script>var plugin_path = 'js/';</script>
+ 
+<!-- REVOLUTION JS FILES -->
+<script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+<!-- revolution custom --> 
+<script src="revolution/js/revolution-custom.js"></script> 
+
+<!-- custom -->
+<script src="js/custom.js"></script>
+<script src="js/owl-carousel/owl-carousel.min.js"></script>
+<script>
+$('#home-slider').owlCarousel({
+  		
+		loop: true,
+		items: 1,
+		nav: false,
+		autoHeight:true,
+		autoplay: true,
+		autoplayHoverPause: true   
+});
+</script>
+
+</body>
 </html>
