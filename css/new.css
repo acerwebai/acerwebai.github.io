@@ -151,8 +151,12 @@ ul {
 	bottom: 10px;
 }
 
-.digit-demo-container .col-lg-6{
+.digit-demo-container .col-lg-5{
 	position: inherit;
+}
+
+.digit-demo-container .nice-select {
+	float: inherit;
 }
 
 @media (min-width: 767px){
@@ -191,6 +195,7 @@ ul {
     }
     
 }
+/*some screen*/
 @media (max-width: 992px) {
     .showindesktoponly{
         display: none !important;
@@ -205,6 +210,9 @@ ul {
     	color: #84ba3f;
 		border: 0;
 }
+	.digit-demo-container .col-lg-5 button {
+		width: 100%;
+	}
 	
     
 }
