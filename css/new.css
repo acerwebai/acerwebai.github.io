@@ -163,6 +163,10 @@ ul {
 	font-size: 24px;
 }
 
+.page-title {
+	padding-top: 70px;
+	padding-bottom: 30px;
+}
 @media (min-width: 767px){
 .dt-mt--50 {
     margin-top: -50px !important;
