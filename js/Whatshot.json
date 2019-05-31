@@ -1,0 +1,34 @@
+{
+
+  "hotcase1": {
+    "id": "./preview/vangogh_crazy_world-preview.html",
+    "order": 1,
+    "hit rate": 100
+  },
+   "hotcase2": {
+      "id": "./preview/picasso_colorful_world-preview.html",
+      "order": 2,
+      "hit rate": 90
+    },
+    "hotcase3": {
+      "id": "./preview/arbitrary_style_transfer-preview.html",
+      "order": 3,
+      "hit rate": 80
+    },
+    "hotcase4": {
+      "id": "./preview/digit_recognizer_live-preview.html",
+      "order": 4,
+      "hit rate": 70
+    },
+    "hotcase5": {
+      "id": "./preview/translation_for_english_french-preview.html",
+      "order": 5,
+      "hit rate": 60
+    },
+    "hotcase6": {
+      "id": "./preview/quick_drawing-preview.html",
+      "order": 6,
+      "hit rate": 50
+    }
+  
+}
