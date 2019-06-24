@@ -1,3 +1,6 @@
+20190622
+delete: revolution/css/settings.css 
+
 20190401
 adding google analysis file
 
