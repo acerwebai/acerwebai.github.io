@@ -50,13 +50,13 @@
 <!--=================================
  header -->
 
-<section class="page-title bg-overlay-black-60 parallax" data-jarallax='{"speed": 0.6}' style="background-image: url(images/inner_page/digit_recognizer_live.png);">
+<section class="page-title bg-overlay-black-60 parallax" data-jarallax='{"speed": 0.6}' style="background-image: url(images/inner_page/clara_a_neural_net_music_generator.png);">
   <div class="container">
     <div class="row"> 
       <div class="col-lg-12"> 
 <!--      <div class="page-title-name">-->
-          <h1>Digit Recognizer Live!</h1>
-          <p>Recognizing Digits using TensorFlow.js in Google Chrome.</p>
+          <h1>Clara: A Neural Net Music Generator</h1>
+          <p>Using an AWD-LSTM network from the FastAI library as the generator model then input music sheet and generate music.</p>
 <!--        </div>-->
         
      </div>
@@ -83,8 +83,8 @@
       
       <div class="col-lg-6 port-information">
           <div class="port-content">
-           <h4 class="mb-30">Digit Recognizer Live!</h4>
-           <p class="mb-30">As we already know the capabilities offered by TensorFlow.js, we will extend the ideas to create two Deep Neural Networks (MLP and CNN) in Keras Python environment to recognize digits and use TensorFlow.js to predict the user drawn digit on a canvas in a web browser. In this learning path, we will restrict the user to draw a single digit between [0, 9] and later we will extend the idea to multiple digits.</p>
+           <h4 class="mb-30">Clara: A Neural Net Music Generator</h4>
+           <p class="mb-30">Clara is an LSTM that composes piano music and chamber music. It has some parallels to Google’s Magenta project, although it’s an entirely separate project, and uses PyTorch, MIT’s music21, and the FastAI library. I use a 62 note range (instead of the full 88-key piano), and I allow any number of notes to play at each musical time step (in contrast with many generation models which insist on having always exactly 4 notes at a time, or in having much smaller note ranges). I trained my models using midi samples from Classical Archives, although the code should work for any piano midi files, as well as for many chamber music files.The code is available here. In particular, take a look at BasicIntro.ipynb, a Jupyter Notebook where you can create your own musical generations with my pretrained model.A more detailed write-up of this project is available here. Try guessing which samples are human and which are AI here.</p>
 <!--
            <div class="tags mb-30">
             <h5>Tags:</h5>
@@ -104,7 +104,7 @@
 -->
               <li>
                 <strong class="theme-color">Author:</strong> <br />
-                <span>Gogul Ilango</span>
+                <span>Open AI, Christine Payne</span>
               </li>
 <!--
               <li>
@@ -118,14 +118,12 @@
 -->
               <li>
                 <strong class="theme-color">Tags: </strong> <br />
-                <div class="tags">
-					<ul>
-					  <li><a href="tags.html#filter=.tensorflowjs">TensorFlow.js</a></li>
-<!--					  <li><a href="tags.html#filter=.minst">MINST</a></li>-->
-					  <li><a href="tags.html#filter=.cnn">CNN</a></li>
-					  <li><a href="tags.html#filter=.mlp">MLP</a></li>
-					</ul>
-				  </div>
+				 <div class="tags">
+							<ul>
+							  <li><a href="tags.html#filter=.rnn">RNN</a></li>
+                                <li><a href="tags.html#filter=.lstm">LSTM</a></li>
+							</ul>
+						  </div>
 <!--
                 <div class="tags mb-30">
                     <ul>
@@ -139,7 +137,7 @@
           </div>
              
               <div class="share clearfix mt-10">
-               <a class="button x-small" href="https://gogul09.github.io/software/digit-recognizer-tf-js" target="_blank">Launch Experiment
+               <a class="button x-small" href="http://christinemcleavey.com/human-or-ai/"target="_blank">Launch Experiment
                   </a>
                   <div class="social xs-mt-10 float-right">
                       <ul>
@@ -152,7 +150,7 @@
                           </li>
 -->
                           <li>
-                              <a class="button x-small" href="https://github.com/Gogul09/digit-recognizer-live"target="_blank"> <i class="fa fa-github"></i> </a>
+                              <a class="button x-small" href="https://github.com/mcleavey/musical-neural-net"target="_blank"> <i class="fa fa-github"></i> </a>
                           </li>
 <!--
                           <li>
@@ -167,7 +165,7 @@
        </div>
       <div class="col-lg-6 showindesktoponly">
         <div class="">
-          <img class="img-fluid full-width" src="images/inner_page/digit_recognizer_live_2.png" alt="">
+          <img class="img-fluid full-width" src="images/inner_page/clara_a_neural_net_music_generator_2.png" alt="">
         </div> 
       </div>     
     </div>
