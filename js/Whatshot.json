@@ -11,22 +11,22 @@
       "hit rate": 90
     },
     "hotcase3": {
-      "id": "./preview/makeblock_AI_mBot.html",
+      "id": "./preview/super_resolution.html",
       "order": 3,
       "hit rate": 80
     },
     "hotcase4": {
-      "id": "./preview/digit_recognizer_live-preview.html",
+      "id": "./preview/makeblock_AI_mBot.html",
       "order": 4,
       "hit rate": 70
     },
     "hotcase5": {
-      "id": "./preview/translation_for_english_french-preview.html",
+      "id": "./preview/digit_recognizer_live-preview.html",
       "order": 5,
       "hit rate": 60
     },
     "hotcase6": {
-      "id": "./preview/quick_drawing-preview.html",
+      "id": "./preview/translation_for_english_french-preview.html",
       "order": 6,
       "hit rate": 50
     }
